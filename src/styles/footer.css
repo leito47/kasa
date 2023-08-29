@@ -1,0 +1,30 @@
+footer {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  position: relative;
+}
+
+footer p {
+  position: absolute;
+  bottom: 30px;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1279px) {
+  footer p {
+    bottom: 20px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  footer p {
+    bottom: 20px;
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,32 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner img {
+  width: 89%;
+  border-radius: 25px;
+  height: 223px;
+  object-fit: cover;
+  margin: auto;
+  filter: brightness(70%);
+  object-position: 50% 47%;
+}
+
+.banner h1 {
+  width: 63%;
+  position: absolute;
+  font-size: 24px;
+  color: white;
+}
+@media only screen and (min-width: 769px) and (max-width: 1279px) {
+  .banner h1 {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .banner h1 {
+    font-size: 48px;
+  }
+}

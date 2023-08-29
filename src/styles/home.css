@@ -1,0 +1,6 @@
+.Cards {
+  background-color: white;
+  margin: 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+}

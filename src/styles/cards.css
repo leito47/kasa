@@ -1,0 +1,24 @@
+.cards {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 25px;
+  width: 30%;
+}
+.cards img {
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  filter: brightness(70%);
+  object-fit: cover;
+}
+.cards h2 {
+  width: 50%;
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  left: 120px;
+  margin: 0;
+  font-size: 18px;
+}
