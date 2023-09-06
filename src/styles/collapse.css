@@ -1,0 +1,56 @@
+.collapse-visible {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto 20px;
+  background-color: #ff6060;
+  border-radius: 5px;
+  align-items: center;
+  width: 75%;
+  margin-bottom: 20px;
+  padding: 0px 10px 0px 10px;
+  border: none;
+  color: white;
+}
+.collapse-visible h1 {
+  margin: 10px 0px 10px 0px;
+}
+
+.collapse-hidden {
+  width: 73%;
+  height: 10px;
+  opacity: 0;
+  margin: 0 auto;
+}
+
+.collapse-hidden p {
+  font-size: 24px;
+  color: #ff6060;
+}
+.animated {
+  opacity: 1;
+  height: 80px;
+}
+.toggle-up {
+  animation-name: toggle-up;
+  animation-delay: 0s;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+.toggle-down {
+  animation-name: toggle-down;
+  animation-delay: 0s;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+/*animations*/
+@keyframes toggle-up {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes toggle-down {
+  100% {
+    transform: rotate(-180deg);
+  }
+}

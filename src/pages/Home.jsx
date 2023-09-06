@@ -1,23 +1,24 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+
+import Header from "../components/header/Header";
+import Footer from "../components/footer/Footer";
 import "./../styles/footer.css";
 import "./../styles/header.css";
 import "./../styles/banner.css";
 import "./../styles/cards.css";
 import "./../styles/home.css";
 
-import Card from "../components/Cards";
-import Logement from "../../src/datas/data.json";
-import Banner from "../components/Banner";
+import Card from "../components/cards/Cards";
+import housings from "../../src/datas/data.json";
+import Banner from "../components/banner/Banner";
 function Home() {
   return (
-    <div className="Home">
+    <div className="home">
       <Header />
       <Banner />
-      <section className="Cards">
-        {Logement.map((data) => {
-          return <Card key={data.id} data={data} />;
+      <section className="content-cards">
+        {housings.map((housing) => {
+          return <Card cover={housing.cover} title={housing.title} />;
         })}
       </section>
       <Footer />

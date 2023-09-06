@@ -1,0 +1,15 @@
+.banner-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.banner-about img {
+  width: 89%;
+  border-radius: 25px;
+  height: 223px;
+  object-fit: cover;
+  margin: auto;
+  filter: brightness(70%);
+  object-position: 50% 47%;
+}
