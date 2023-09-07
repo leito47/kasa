@@ -1,0 +1,14 @@
+/* .housing {
+  display: flex;
+} */
+.section-collapse {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.localisation-tag {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

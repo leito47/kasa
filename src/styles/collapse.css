@@ -10,6 +10,7 @@
   padding: 0px 10px 0px 10px;
   border: none;
   color: white;
+  cursor: pointer;
 }
 .collapse-visible h1 {
   margin: 10px 0px 10px 0px;
@@ -28,7 +29,7 @@
 }
 .animated {
   opacity: 1;
-  height: 80px;
+  height: 100px;
 }
 .toggle-up {
   animation-name: toggle-up;

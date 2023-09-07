@@ -1,5 +1,4 @@
 import React from "react";
-
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 import "./../styles/footer.css";
@@ -18,7 +17,9 @@ function Home() {
       <Banner />
       <section className="content-cards">
         {housings.map((housing) => {
-          return <Card cover={housing.cover} title={housing.title} />;
+          return (
+            <Card cover={housing.cover} title={housing.title} id={housing.id} />
+          );
         })}
       </section>
       <Footer />

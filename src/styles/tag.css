@@ -1,0 +1,16 @@
+ul {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  gap: 20px;
+}
+
+li {
+  border: none;
+  border-radius: 10px;
+  width: 115px;
+  height: 25px;
+  background-color: #ff6060;
+  color: white;
+  font-size: 14px;
+}
