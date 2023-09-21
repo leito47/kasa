@@ -1,3 +1,27 @@
-.collapse-about {
-  margin-bottom: 100px;
+.collapse {
+  margin: 0;
+}
+
+.section-collapse-about {
+  display: flex;
+  flex-direction: column;
+  margin: 0 45px 5px;
+  gap: 30px;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1279px) {
+  .section-collapse-about {
+    margin: 0 110px 5px;
+  }
+  .fullWidth {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .section-collapse-about {
+    margin: 0 130px 5px;
+  }
+  .fullWidth {
+    width: 100%;
+  }
 }

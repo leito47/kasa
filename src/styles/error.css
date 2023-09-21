@@ -6,7 +6,7 @@
 .section-error h1,
 .section-error p,
 .section-error a {
-  color: #ff6060;
+  color: var(--color-red);
 }
 
 .section-error h1 {

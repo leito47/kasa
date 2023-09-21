@@ -18,7 +18,12 @@ function Home() {
       <section className="content-cards">
         {housings.map((housing) => {
           return (
-            <Card cover={housing.cover} title={housing.title} id={housing.id} />
+            <Card
+              cover={housing.cover}
+              title={housing.title}
+              id={housing.id}
+              key={housing.id}
+            />
           );
         })}
       </section>

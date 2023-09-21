@@ -6,14 +6,21 @@ import "../styles/collapse.css";
 import "../styles/about.css";
 import "../styles/bannerAbout.css";
 import BannerAbout from "../components/banner/BannerAbout";
-
+import { useEffect } from "react";
 function About() {
+  useEffect(() => {
+    /*
+    Query logic
+    */
+    console.log("i fire once");
+  }, []);
   return (
     <div>
       <Header />
       <BannerAbout />
-      <section className="collapse-about">
+      <section className="section-collapse-about">
         {collapseData.map((collapse) => {
+          console.log(collapse);
           return (
             <Collapse
               key={collapse.id}

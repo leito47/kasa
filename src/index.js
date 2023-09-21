@@ -10,16 +10,14 @@ import Housing from "./pages/Housing";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Housing/:id" element={<Housing />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
-    </Router>
-  </React.StrictMode>
+  <Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/housing/:id" element={<Housing />} />
+      <Route path="*" element={<Error />} />
+    </Routes>
+  </Router>
 );
 
 // If you want to start measuring performance in your app, pass a function

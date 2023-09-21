@@ -1,9 +1,5 @@
 function Tag({ tags }) {
-  return (
-    <div className="tag">
-      <li>{tags}</li>
-    </div>
-  );
+  return <div className="tag">{tags}</div>;
 }
 
 export default Tag;

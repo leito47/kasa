@@ -1,57 +1,44 @@
-.collapse-visible {
+.collapse {
   display: flex;
   justify-content: space-between;
-  margin: 10px auto 20px;
-  background-color: #ff6060;
-  border-radius: 5px;
   align-items: center;
-  width: 75%;
-  margin-bottom: 20px;
-  padding: 0px 10px 0px 10px;
+  background-color: var(--color-red);
   border: none;
-  color: white;
-  cursor: pointer;
-}
-.collapse-visible h1 {
-  margin: 10px 0px 10px 0px;
-}
-
-.collapse-hidden {
-  width: 73%;
-  height: 10px;
-  opacity: 0;
-  margin: 0 auto;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: var(--color-white);
+  margin-bottom: 25px;
 }
 
-.collapse-hidden p {
-  font-size: 24px;
-  color: #ff6060;
+.collapse h1 {
+  font-size: 13px;
+  font-weight: 500;
 }
-.animated {
-  opacity: 1;
-  height: 100px;
-}
-.toggle-up {
-  animation-name: toggle-up;
-  animation-delay: 0s;
-  animation-duration: 0.3s;
-  animation-fill-mode: forwards;
-}
-.toggle-down {
-  animation-name: toggle-down;
-  animation-delay: 0s;
-  animation-duration: 0.3s;
-  animation-fill-mode: forwards;
+.collapse-content {
+  color: var(--color-red);
+  font-size: 12px;
+  padding: 10px;
 }
 
-/*animations*/
-@keyframes toggle-up {
-  100% {
-    transform: rotate(180deg);
+@media only screen and (min-width: 769px) and (max-width: 1279px) {
+  .collapse {
+    margin-bottom: 50px;
+  }
+  .collapse h1 {
+    font-size: 18px;
+  }
+  .collapse-content {
+    font-size: 18px;
   }
 }
-@keyframes toggle-down {
-  100% {
-    transform: rotate(-180deg);
+@media only screen and (min-width: 1280px) {
+  .collapse {
+    margin-bottom: 30px;
+  }
+  .collapse h1 {
+    font-size: 18px;
+  }
+  .collapse-content {
+    font-size: 18px;
   }
 }

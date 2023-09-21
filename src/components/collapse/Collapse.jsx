@@ -1,9 +1,10 @@
 import React from "react";
-import arrowDown from "../../assets/arrowDown_About.png";
-import arrowUp from "../../assets/arrowUp_About.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
+
 import { useState } from "react";
 
-function Collapse({ title, content }) {
+function Collapse({ title, content, divStyle = { width: "100%" } }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const openCollapse = () => {
@@ -11,21 +12,18 @@ function Collapse({ title, content }) {
   };
 
   return (
-    <div className="collapse">
-      <button className="collapse-visible" onClick={openCollapse}>
+    <div className="fullWidth" style={divStyle}>
+      <div className="collapse " onClick={openCollapse}>
         <h1>{title}</h1>
 
-        <img
-          className={isOpen ? "toggle-up" : "toggle-down"}
-          src={isOpen ? arrowDown : arrowUp}
-          alt={isOpen ? "arrow-up" : "arrow-down"}
-        />
-      </button>
-      <div
-        className={isOpen ? "collapse-hidden animated " : "collapse-hidden "}
-      >
-        <p>{content}</p>
+        <p>
+          <FontAwesomeIcon
+            icon={isOpen ? faAngleUp : faAngleDown}
+            style={{ fontSize: "24px" }}
+          />
+        </p>
       </div>
+      {isOpen && <div className="collapse-content">{content}</div>}
     </div>
   );
 }

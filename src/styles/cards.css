@@ -1,10 +1,6 @@
 .cards {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  margin: 40px 25px;
-  width: 30%;
 }
 .cards img {
   width: 340px;
@@ -14,11 +10,11 @@
   object-fit: cover;
 }
 .cards h2 {
-  width: 50%;
-  color: white;
+  width: 52%;
+  color: var(--color-white);
   position: absolute;
   bottom: 15px;
-  left: 120px;
+  left: 17px;
   margin: 0;
   font-size: 18px;
 }
