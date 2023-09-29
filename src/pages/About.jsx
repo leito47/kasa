@@ -12,7 +12,7 @@ function About() {
     /*
     Query logic
     */
-    console.log("i fire once");
+    // console.log("i fire once");
   }, []);
   return (
     <div>
@@ -20,7 +20,7 @@ function About() {
       <BannerAbout />
       <section className="section-collapse-about">
         {collapseData.map((collapse) => {
-          console.log(collapse);
+          // console.log(collapse);
           return (
             <Collapse
               key={collapse.id}
